@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RickAndMorty.Core.Data\RickAndMorty.Core.Data.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Core.Domain\RickAndMorty.Core.Domain.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Core.Services\RickAndMorty.Core.Services.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Integration\RickAndMorty.Core.Integration.csproj" />
+  </ItemGroup>
+
+</Project>
